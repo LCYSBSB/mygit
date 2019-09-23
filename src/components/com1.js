@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { ADDAGE } from "../action";
+import Auth from "./auth";
+// import Tip from "../../lianxi/index";
+@Auth
 class Com1 extends Component {
-  constructor(...agrs) {
-    super(...agrs);
-  }
   fn() {
-    debugger;
     this.props.addage(3);
   }
   render() {
     return (
       <div>
-        <input type="button" value="+3" onClick={this.fn.bind(this)} />
+        <button onClick={this.fn.bind(this)}>+</button>
       </div>
     );
   }
