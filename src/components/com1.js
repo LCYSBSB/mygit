@@ -6,6 +6,7 @@ import Auth from "./auth";
 @Auth
 class Com1 extends Component {
   fn() {
+    console.log(1);
     this.props.addage(3);
   }
   render() {
